@@ -24,9 +24,3 @@ export const authLogin = (payload: any) =>
  */
 export const authRegister = (payload: any) =>
   axios.post(`${API_URL}/api/auth/local/register`, payload);
-
-export const forgotPassword = (payload: any) =>
-  axios.post(`${API_URL}/api/user/password/reset`, payload);
-
-export const resetPassword = (payload: any) =>
-  axios.post(`${API_URL}/api/user/password/reset/verify`, payload);

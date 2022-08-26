@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import React, { Fragment, FC, useEffect } from "react";
 import Head from "next/head";
-import SiteHeader from "components/layouts/site-header";
-import SiteFooter from "components/layouts/site-footer";
-import LinkedInTag from "react-linkedin-insight";
+
 
 import { useRouter } from "next/router";
 interface ISeo {
@@ -25,16 +23,15 @@ interface ISite {
 const SEO = {
   title: "Homepage",
   description: "Description",
-  image: "/picaso E-kyc.png",
-  url: "https://www.picaso.id/",
+  image: "",
+  url: "",
   noIndex: 0,
-  keywords: "Mudah dan cepat serta terverifikasi dengan Dukcapil",
+  keywords: "",
 };
 
 const Site: FC<ISite> = ({
   seo = SEO,
   isHome = false,
-  isLogin = false,
   children,
 }) => {
   const router = useRouter();
@@ -55,20 +52,6 @@ const Site: FC<ISite> = ({
   return (
     <Fragment>
       <Head>
-        {/* <script
-          dangerouslySetInnerHTML={{
-            __html: `!function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '1027453168174179');
-              fbq('track', 'PageView');`,
-          }}
-        /> */}
         <meta charSet='UTF-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <title>{seo.title}</title>
@@ -102,9 +85,7 @@ const Site: FC<ISite> = ({
             <meta name='googlebot' content='noindex'></meta>
           </>
         )}
-        {/* linkedinTag */}
 
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-8ZB5BDKM9K`}
@@ -127,7 +108,6 @@ const Site: FC<ISite> = ({
         }}
       />
       <div className={isHome ? "site site--home" : "site"} id='top'>
-        <SiteHeader isHome={isHome} isLogin={isLogin} />
         <main role='main'>{children}</main>
       </div>
     </Fragment>
