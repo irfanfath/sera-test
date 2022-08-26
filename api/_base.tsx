@@ -11,6 +11,12 @@ export const CONFIG_HEADER = {
   },
 };
 
+// export const CONFIG_HEADER_CREATE = {
+//   header: {
+//     body: JSON.stringify(articlePost)
+//   }
+// }
+
 export const DEMO_TOKEN = process.env.NEXT_PUBLIC_API_DEMO_TOKEN;
 export const CONFIG_HEADER_DEMO = {
   headers: {

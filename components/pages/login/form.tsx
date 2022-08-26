@@ -38,7 +38,7 @@ const LoginForm: FC = () => {
       await authLogin(login).then((res) => {
         if (res.status === 200) {
           Cookies.set("token", res.data.jwt);
-          window.location.href = "/dashboard";
+          window.location.href = "/dashboard/developer-logs";
         } else {
           setNotif({
             isShow: true,

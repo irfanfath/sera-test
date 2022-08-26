@@ -129,7 +129,6 @@ const Site: FC<ISite> = ({
       <div className={isHome ? "site site--home" : "site"} id='top'>
         <SiteHeader isHome={isHome} isLogin={isLogin} />
         <main role='main'>{children}</main>
-        <SiteFooter />
       </div>
     </Fragment>
   );

@@ -37,17 +37,9 @@ export const postRefreshToken = (refresh_token: any) =>
  *
  * @return {Promise<resolve, reject>}
  */
-export const getDataLog = ({ api = '', date = '', type = '', page = 1, size = 20 }) =>
-  axios.get(
-    `${API_URL}/api/dashboard/developer-logs?api=${api}&date=${date}&type=${type}&page=${page}&size=${size}`,
-    CONFIG_HEADER
-  );
-
-// export const getDataLog = ({ api = '', date = '', type = '', page = 1 }) =>
-//   axios.get(
-//     `${API_URL}/api/dashboard/developer-logs?api=${api}&date=${date}&type=${type}&page=${page}}`,
-//   CONFIG_HEADER
-//   );
 
 export const getListApiDeveloperLog = () =>
-  axios.get(`${API_URL}/api/dashboard/developer-logs/list-api`, CONFIG_HEADER);
+  axios.get(`${API_URL}/api/articles`, CONFIG_HEADER);
+
+export const createArticle = (payload: any) =>
+  axios.post(`${API_URL}/api/articles`, payload, CONFIG_HEADER);

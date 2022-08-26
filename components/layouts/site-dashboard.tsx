@@ -79,14 +79,6 @@ const SiteDashboard: FC<ISiteDashboard> = ({
           </Link>
           <ul className='dashboard__aside-menu'>
             <li>
-              <Link href='/dashboard'>
-                <a className={pathname === "/dashboard" ? "active" : ""}>
-                  <IconApi />
-                  API & Service
-                </a>
-              </Link>
-            </li>
-            <li>
               <Link href='/dashboard/developer-logs'>
                 <a
                   className={
@@ -94,19 +86,9 @@ const SiteDashboard: FC<ISiteDashboard> = ({
                   }
                 >
                   <IconLog />
-                  Developer Logs
+                  List Article
                 </a>
               </Link>
-            </li>
-            <li>
-              <a
-                target='_blank'
-                href='https://picaso-ocr.gitbook.io/documentations'
-                rel='noopener noreferrer'
-              >
-                <IconDocument />
-                Documentation
-              </a>
             </li>
             <li>
               <button className='dashboard__logout' onClick={showModalLogout}>
@@ -115,25 +97,6 @@ const SiteDashboard: FC<ISiteDashboard> = ({
               </button>
             </li>
           </ul>
-          <div className='dashboard__aside-contact'>
-            <div className='dashboard__aside-contact__img'>
-              <Image
-                src='/ilust-vr.png'
-                title='Customer service'
-                alt='Customer service'
-                width='195.79'
-                height='168.41'
-              />
-            </div>
-            <h3>Customer service</h3>
-            <p>
-              Discover our cards benefits, with one tap. with one tap.with
-              tap.with one tap.with
-            </p>
-            <Link href='/contact-us'>
-              <a className='button button--white w-full'>Contact Us</a>
-            </Link>
-          </div>
         </aside>
         <nav className='dashboard__nav'>
           <div className='dashboard__nav-profile'>
