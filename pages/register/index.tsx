@@ -5,12 +5,10 @@ import RegisterForm from "components/pages/register/form";
 
 const Register: NextPage = () => {
   const seo = {
-    title: "Register E-kyc",
+    title: "Register Account",
     description:
-      "daftar gratis picaso e-kyc telkom artificial intelligence terbaik di indonesia",
-    url: "https://www.picaso.id/register",
+      "Register new account",
     noIndex: false,
-    keywords: "daftar picaso e-kyc artificial intelligence indonesia ",
   };
 
   return (
@@ -25,10 +23,9 @@ const Register: NextPage = () => {
                 width='400'
                 height='345'
               />
-              <h2 className='auth-title'>Picaso Developer Portal</h2>
+              <h2 className='auth-title'>Let's Create New Account</h2>
               <p className='auth-description'>
-                We are the best of machine learning and AI-Driven automation to
-                automate identity verification in efficient manner
+                If you have account you can going to login page
               </p>
             </div>
             <div className='col-1 md-col-12'></div>

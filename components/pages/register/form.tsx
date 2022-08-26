@@ -1,5 +1,4 @@
 import { FC, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { authRegister } from "api/auth";
 import { isEmailValid } from "utils";
@@ -86,17 +85,8 @@ const RegisterForm: FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className='form auth-form'>
-      <div className='auth-form__logo text-center'>
-        <Image
-          src='/logo-picaso.png'
-          title='Picaso'
-          alt='Picaso Team Logo'
-          width='174'
-          height='41'
-        />
-      </div>
       <h3 className='auth-form__title'>
-        Register Picaso-API Developer Portal&apos;s
+        Register Account
       </h3>
 
       <label htmlFor='email'>
@@ -224,11 +214,9 @@ const RegisterForm: FC = () => {
           required
         />
         &nbsp; I have read and agree to &nbsp;
-        <Link href='/terms'>
           <a className='text-red' data-cy='link-terms'>
             <b>the Terms</b>
           </a>
-        </Link>
       </label>
 
       <button

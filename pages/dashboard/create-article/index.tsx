@@ -7,10 +7,8 @@ const CreateArticle: NextPage = () => {
   const seo = {
     title: "Create Article",
     description:
-      "daftar gratis picaso e-kyc telkom artificial intelligence terbaik di indonesia",
-    url: "https://www.picaso.id/register",
+      "Create new article",
     noIndex: false,
-    keywords: "daftar picaso e-kyc artificial intelligence indonesia ",
   };
 
   return (
@@ -25,10 +23,9 @@ const CreateArticle: NextPage = () => {
                 width='400'
                 height='345'
               />
-              <h2 className='auth-title'>Picaso Developer Portal</h2>
+              <h2 className='auth-title'>Create New Article</h2>
               <p className='auth-description'>
-                We are the best of machine learning and AI-Driven automation to
-                automate identity verification in efficient manner
+                Let's Create New Article
               </p>
             </div>
             <div className='col-1 md-col-12'></div>

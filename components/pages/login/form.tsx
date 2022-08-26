@@ -1,6 +1,5 @@
 import { FC, useState } from "react";
 import Cookies from "js-cookie";
-import Image from "next/image";
 import Link from "next/link";
 import { authLogin } from "api/auth";
 import { Modal } from "components/elements";
@@ -62,16 +61,7 @@ const LoginForm: FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className='form auth-form'>
-      <div className='auth-form__logo text-center'>
-        <Image
-          src='/logo-picaso.png'
-          title='Picaso'
-          alt='Picaso Team Logo'
-          width='174'
-          height='41'
-        />
-      </div>
-      <h3 className='auth-form__title'>Login to Picaso-API Developer Portal</h3>
+      <h3 className='auth-form__title'>Login to Dashboard</h3>
 
       <label htmlFor='identifier'>
         <span>Username</span>

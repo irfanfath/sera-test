@@ -25,10 +25,9 @@ const Login: NextPage = () => {
                 width='400'
                 height='345'
               />
-              <h2 className='auth-title'>Picaso Developer Portal</h2>
+              <h2 className='auth-title'>Please Login</h2>
               <p className='auth-description'>
-                We are the best of machine learning and AI-Driven automation to
-                automate identity verification in efficient manner
+                If you haven't account you can going to register page
               </p>
             </div>
             <div className='col-1 md-col-12'></div>

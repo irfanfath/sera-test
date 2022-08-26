@@ -66,17 +66,8 @@ const ArticleForm: FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className='form auth-form'>
-      <div className='auth-form__logo text-center'>
-        <Image
-          src='/logo-picaso.png'
-          title='Picaso'
-          alt='Picaso Team Logo'
-          width='174'
-          height='41'
-        />
-      </div>
       <h3 className='auth-form__title'>
-        Register Picaso-API Developer Portal&apos;s
+        Create New Article&apos;s
       </h3>
 
       <label htmlFor='title'>
@@ -115,7 +106,7 @@ const ArticleForm: FC = () => {
         data-cy='register-submit'
         disabled={isFilled || isSubmitted}
       >
-        <IconSandbox /> &nbsp; {isSubmitted ? "Loading..." : "REGISTER"}
+        <IconSandbox /> &nbsp; {isSubmitted ? "Loading..." : "Create Article"}
       </button>
 
       {notif.type === "error" ? (
@@ -140,9 +131,9 @@ const ArticleForm: FC = () => {
             <h1 className='modal__title'>Sucessfully Create Article!</h1>
             <p>{notif.message}</p>
             <div className='modal__button text-center'>
-              <Link href='/developer-logs' data-cy='modal-link-login'>
+              <Link href='/dashboard/developer-logs' data-cy='modal-link-login'>
                 <a className='button w-full'>
-                  <b>Go to Login</b>
+                  <b>Go to Dashboard</b>
                 </a>
               </Link>
             </div>

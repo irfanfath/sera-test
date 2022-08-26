@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://picaso.id",
+  siteUrl: "https://fe-technical-test.herokuapp.com",
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
