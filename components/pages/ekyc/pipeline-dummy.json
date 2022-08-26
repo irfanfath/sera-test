@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "type": "face-close-center",
+    "title": "Step 1",
+    "sub_title": "Try to take a shot by looking straight to the Center",
+    "image_guide": "/ekyc/liveness/example_face-orientation-center.svg",
+    "pose": "Straight ahead"
+  },
+  {
+    "id": 2,
+    "type": "face-emotion-happy",
+    "title": "Step 1",
+    "sub_title": "Try to Take a shoot your Happy face :)",
+    "image_guide": "/ekyc/liveness/example_face-emotion-happy.svg",
+    "pose": "Happy"
+  },
+  {
+    "id": 3,
+    "type": "face-emotion-neutral",
+    "title": "Step 1",
+    "sub_title": "Try to Take a shoot your Neutral face :)",
+    "image_guide": "/ekyc/liveness/example_face-orientation-center.svg",
+    "pose": "Straight ahead"
+  },
+  {
+    "id": 4,
+    "type": "face-emotion-sad",
+    "title": "Step 1",
+    "sub_title": "Try to Take a shoot your Sad face :(",
+    "image_guide": "/ekyc/liveness/example_face-orientation-sad.svg",
+    "pose": "Sad"
+  },
+  {
+    "id": 5,
+    "type": "face-open-mouth",
+    "title": "Step 1",
+    "sub_title": "Try to Take a shoot with an open mouth",
+    "image_guide": "/ekyc/liveness/example_face-open-mouth.svg",
+    "pose": "Open Mouth"
+  },
+  {
+    "id": 6,
+    "type": "face-orientation-center",
+    "title": "Step 1",
+    "sub_title": "Try to take a shot by looking straight to the Center",
+    "image_guide": "/ekyc/liveness/example_face-orientation-center.svg",
+    "pose": "Looking Straight"
+  },
+  {
+    "id": 7,
+    "type": "face-orientation-left",
+    "title": "Step 1",
+    "sub_title": "Try to take a shot by facing 45° to the left",
+    "image_guide": "/ekyc/liveness/example_face-orientation-left.svg",
+    "pose": "Facing 45° to the left"
+  },
+  {
+    "id": 8,
+    "type": "face-orientation-right",
+    "title": "Step 1",
+    "sub_title": "Try to take a shot by facing 45° to the right",
+    "image_guide": "/ekyc/liveness/example_face-orientation-right.svg",
+    "pose": "Facing 45° to the right"
+  },
+  {
+    "id": 9,
+    "type": "face-similar-with-national-id",
+    "title": "Step 3",
+    "sub_title": "Try to Take a shoot Expresion like KTP",
+    "image_guide": "/ekyc/liveness/example_national-id.svg",
+    "pose": "Verified Face With ID Card"
+  },
+  {
+    "id": 10,
+    "type": "national-id",
+    "title": "Step 2",
+    "sub_title": "Try to Take a shoot your ID Identity",
+    "image_guide": "/ekyc/liveness/example_national-id.svg",
+    "pose": "Facing 45° to the right"
+  }
+]

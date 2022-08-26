@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer';
 import { login } from '@/services/ant-design-pro/api';
-import { getFakeCaptcha } from '@/services/ant-design-pro/login';
+import { authRegister, getFakeCaptcha } from '@/services/ant-design-pro/login';
 import {
   AlipayCircleOutlined,
   LockOutlined,
@@ -19,6 +19,8 @@ import { FormattedMessage, history, SelectLang, useIntl, useModel } from '@umijs
 import { Alert, message, Tabs } from 'antd';
 import React, { useState } from 'react';
 import styles from './index.less';
+
+
 
 const LoginMessage: React.FC<{
   content: string;
@@ -39,6 +41,12 @@ const Login: React.FC = () => {
   const [userLoginState, setUserLoginState] = useState<API.LoginResult>({});
   const [type, setType] = useState<string>('account');
   const { initialState, setInitialState } = useModel('@@initialState');
+  const [register, setRegister] = useState<IRegister>({
+    email: "",
+    username: "",
+    password: "",
+    retype_password: "",
+  });
 
   const intl = useIntl();
 
@@ -80,6 +88,22 @@ const Login: React.FC = () => {
     }
   };
   const { status, type: loginType } = userLoginState;
+
+  const handleSubmitRegister = async (e: any) => {
+    e.preventDefault();
+    const payload = {
+      email: register.email,
+      username: register.username,
+      password: register.password,
+    };
+    try {
+      await authRegister(payload).then((res: any) => {
+        console.log("sukses")
+      });
+    } catch (err:any) {
+      console.log("gagal")
+    }
+  };
 
   return (
     <div className={styles.container}>

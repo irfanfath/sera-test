@@ -1,0 +1,36 @@
+.home-cta {
+  background-color: #d33341;
+  border-radius: 50px;
+  height: 350px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 90px;
+
+  &__image {
+    margin-top: -50px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    padding: 40px;
+
+    &__image {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    margin-top: 0;
+    h2 {
+      margin-top: 40px;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.product-pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #f9f9f9;
+  border-radius: 25px;
+  margin-bottom: 12px;
+  padding: 40px 10px;
+
+  &:nth-child(2) {
+    margin-top: 64px;
+  }
+
+  span {
+    display: block;
+
+    & + span {
+      margin-top: 20px;
+    }
+  }
+
+  &__title {
+    max-width: 190px;
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
+    padding: 0 20px;
+
+    h3 {
+      font-weight: 500;
+    }
+
+    span {
+      margin-top: 8px;
+      font-size: 12px;
+      font-style: italic;
+
+      &:before {
+        content: '*';
+        color: #d33341;
+        display: inline-block;
+        margin-right: 2px;
+      }
+
+      & + span {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  &__product-detail {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: calc(100% - 190px - 212px);
+  }
+
+  &__service {
+    min-width: 250px;
+    max-width: 250px;
+    padding: 0 20px;
+
+    span {
+      white-space: normal;
+    }
+  }
+
+  &__mount {
+    max-width: 179px;
+    width: 100%;
+    font-weight: 500;
+    padding: 0 20px;
+  }
+
+  &__note {
+    max-width: 227px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  &__action {
+    max-width: 212px;
+    padding: 0 20px;
+    width: 100%;
+    padding-top: 20px;
+
+    .button {
+      min-width: 150px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 20px 10px;
+
+    &__title {
+      max-width: 100%;
+      text-align: left;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    &__product-detail {
+      max-width: calc(100% - 212px);
+
+      & > div {
+        white-space: pre;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__action {
+      max-width: 100%;
+
+      .button {
+        margin: 0 auto;
+      }
+    }
+
+    &__product-detail {
+      max-width: 100%;
+      padding-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &__product-detail {
+      overflow-x: scroll;
+    }
+  }
+}

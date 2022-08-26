@@ -1,0 +1,26 @@
+.home-who {
+  margin-top: 59px;
+
+  .home-who__image {
+    position: relative;
+
+    &:before {
+      content: '';
+      background-image: url(/home/box-dots.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: -86px;
+      top: -44px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .home-sub-title {
+      margin-top: 24px;
+    }
+  }
+}

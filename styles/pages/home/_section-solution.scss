@@ -1,0 +1,37 @@
+.home-solution {
+  margin-top: 120px;
+  padding: 80px 0;
+
+  &__content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+
+  &__image {
+    position: relative;
+    width: calc(100% - 12px);
+    padding: 20px 0;
+    display: inline-block;
+
+    img {
+      z-index: 9;
+      position: relative;
+    }
+  }
+
+  .row {
+    margin-top: 120px;
+  }
+
+  @media screen and (max-width: 576px) {
+    .row {
+      margin-top: 40px;
+    }
+  }
+}
