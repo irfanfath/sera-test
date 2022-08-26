@@ -5,12 +5,7 @@ import LoginForm from "components/pages/login/form";
 
 const Login: NextPage = () => {
   const seo = {
-    title: "Masuk/Login Picaso E-kyc",
-    description:
-      "Lupa kata sandi? Selanjutnya. atau masuk dengan google, login picaso e-kyc",
-    url: "https://www.picaso.id/login",
-    noIndex: false,
-    keywords: "login picaso e-kyc telkom indonesia",
+    title: "Masuk/Login",
   };
 
   return (
@@ -21,7 +16,7 @@ const Login: NextPage = () => {
             <div className='col-6 md-hide text-center'>
               <Image
                 src='/ilust-vr.png'
-                alt='E-kyc Technology Picaso Banner'
+                alt='Logo'
                 width='400'
                 height='345'
               />

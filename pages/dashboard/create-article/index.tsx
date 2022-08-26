@@ -19,7 +19,7 @@ const CreateArticle: NextPage = () => {
             <div className='col-6 md-hide text-center'>
               <Image
                 src='/ilust-vr.png'
-                alt='E-kyc Technology Picaso Banner'
+                alt='Logo'
                 width='400'
                 height='345'
               />
