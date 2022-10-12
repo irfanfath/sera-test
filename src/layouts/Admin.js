@@ -20,8 +20,8 @@ const Admin = (props) => {
   }, [location]);
 
   useEffect(() => {
-    const isAuthenticate = localStorage.getItem('_athe')
-    const token = localStorage.getItem('_beertk')
+    const isAuthenticate = localStorage.getItem('authentihated')
+    const token = localStorage.getItem('token')
 
     if(!token || !isAuthenticate){
       navigate('/auth')

@@ -23,7 +23,7 @@ import Header from "../components/Headers/Header.js";
         try {
             const { data: response } = await axios.get(`${base}/articles`, {
                 headers: {
-                    Authorization: `Bearer ${localStorage.getItem("_beertk")}`,
+                    Authorization: `Bearer ${localStorage.getItem("token")}`,
                     Accept: "application/json",
                     "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
                 },
@@ -39,7 +39,7 @@ import Header from "../components/Headers/Header.js";
       try {
         await axios.delete(`${base}/articles/${id}`, {
           headers: {
-            Authorization: `Bearer ${localStorage.getItem("_beertk")}`,
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
             Accept: "application/json",
             "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
           },

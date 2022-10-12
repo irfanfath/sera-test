@@ -32,7 +32,7 @@ import { base } from "../api/base";
         }
       }
       const headers = {
-        Authorization: `Bearer ${localStorage.getItem("_beertk")}`,
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
         Accept: "application/json",
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
       }

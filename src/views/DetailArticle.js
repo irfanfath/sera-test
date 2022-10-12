@@ -28,7 +28,7 @@ import { base } from "../api/base";
         try {
             const { data: response } = await axios.get(`${base}/articles/${id}`, {
                 headers: {
-                    Authorization: `Bearer ${localStorage.getItem("_beertk")}`,
+                    Authorization: `Bearer ${localStorage.getItem("token")}`,
                     Accept: "application/json",
                     "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
                 },
@@ -47,7 +47,7 @@ import { base } from "../api/base";
           }
         }
         const headers = {
-          Authorization: `Bearer ${localStorage.getItem("_beertk")}`,
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
           Accept: "application/json",
           "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
         }

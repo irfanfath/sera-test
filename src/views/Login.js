@@ -28,8 +28,8 @@ import { base } from "../api/base";
         axios.post(`${base}/auth/local`, data)
         .then((res) => {
           if(res.status === 200){
-              localStorage.setItem("_beertk", res.data.jwt);
-              localStorage.setItem("_athe", true);
+              localStorage.setItem("token", res.data.jwt);
+              localStorage.setItem("authentihated", true);
               navigate('/admin/index')
           } else {
             Swal.fire({
